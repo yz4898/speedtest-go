@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
-    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <meta charset="UTF-8" />
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400|Source+Sans+Pro:400,600">
     <script type="text/javascript" src="speedtest.js"></script>
@@ -24,27 +25,27 @@
             var lineBreakElement = document.createElement('br');
             var locationNode = document.createTextNode('Unknown');
             switch (window.location.hostname) {
-                case 'us1.zzz.cat':
-                    locationNode.textContent = 'Unites States 1 (Fremont, Linode)';
-                    break;
-                case 'us2.zzz.cat':
-                    locationNode.textContent = 'Unites States 2 (LAX (CN2), Bandwagon)';
-                    break;
-                case 'us3.zzz.cat':
-                    locationNode.textContent = 'Unites States 3 (LAX (CN2 GIA-E), Bandwagon)';
-                    break;
-                case 'jp1.zzz.cat':
-                    locationNode.textContent = 'Japan 1 (Tokyo 2, Linode)';
-                    break;
-                case 'jp2.zzz.cat':
-                    locationNode.textContent = 'Japan 2 (Tokyo 2, Linode)';
-                    break;
-                case 'sg1.zzz.cat':
-                    locationNode.textContent = 'Singapore (Singapore, Linode)';
-                    break;
-                case 'ca1.zzz.cat':
-                    locationNode.textContent = 'Canada (Toronto, Linode)';
-                    break;
+                // case 'us1.zzz.cat':
+                //     locationNode.textContent = 'Unites States 1 (Fremont, Linode)';
+                //     break;
+                // case 'us2.zzz.cat':
+                //     locationNode.textContent = 'Unites States 2 (LAX (CN2), Bandwagon)';
+                //     break;
+                // case 'us3.zzz.cat':
+                //     locationNode.textContent = 'Unites States 3 (LAX (CN2 GIA-E), Bandwagon)';
+                //     break;
+                // case 'jp1.zzz.cat':
+                //     locationNode.textContent = 'Japan 1 (Tokyo 2, Linode)';
+                //     break;
+                // case 'jp2.zzz.cat':
+                //     locationNode.textContent = 'Japan 2 (Tokyo 2, Linode)';
+                //     break;
+                // case 'sg1.zzz.cat':
+                //     locationNode.textContent = 'Singapore (Singapore, Linode)';
+                //     break;
+                // case 'ca1.zzz.cat':
+                //    locationNode.textContent = 'Canada (Toronto, Linode)';
+                //    break;
                 default:
                     locationNode.textContent = window.location.hostname;
                     break;
@@ -191,7 +192,8 @@
             --grass-green: #02b159;
         }
 
-        html, body {
+        html,
+        body {
             background-color: white;
             border: none;
             box-sizing: border-box;
@@ -219,7 +221,9 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        *, *:before, *:after {
+        *,
+        *:before,
+        *:after {
             box-sizing: inherit;
         }
 
@@ -266,7 +270,8 @@
 
         div.testArea {
             display: inline-block;
-            width: calc(100% - 2rem - 2rem); /* subtract margins */
+            width: calc(100% - 2rem - 2rem);
+            /* subtract margins */
             max-width: 16em;
             margin: 2rem;
             position: relative;
@@ -339,7 +344,7 @@
             margin-top: 2em;
         }
 
-        #shareArea > * {
+        #shareArea>* {
             display: block;
             width: 100%;
             height: auto;
@@ -406,6 +411,7 @@
         }
 
         @media all and (max-width: 65em) {
+
             /* 1040 px */
             div.testGroup {
                 margin-left: -1rem;
@@ -413,111 +419,118 @@
             }
 
             div.testArea {
-                font-size: 1.5384615vw; /* 16 px */
+                font-size: 1.5384615vw;
+                /* 16 px */
                 margin: 1rem;
-                width: calc(100% - 1rem - 1rem); /* subtract margins */
+                width: calc(100% - 1rem - 1rem);
+                /* subtract margins */
             }
         }
 
         @media all and (max-width: 40em) {
+
             /* 640 px */
             div.testArea {
-                font-size: 0.8em; /* 12.8 px */
+                font-size: 0.8em;
+                /* 12.8 px */
             }
         }
-
     </style>
     <title>Speedtest</title>
 </head>
-<body>
-<div id="testWrapper">
-    <h1 id="pageTitle"></h1>
-    <div id="startStopBtn" onclick="startStop()"></div>
-    <br/>
-    <div id="test">
-        <div class="testGroup">
-            <div class="testArea">
-                <div class="testName">Download</div>
-                <canvas id="dlMeter" class="meter"></canvas>
-                <div id="dlText" class="meterText"></div>
-                <div class="unit">Mbps</div>
-            </div>
-            <div class="testArea">
-                <div class="testName">Upload</div>
-                <canvas id="ulMeter" class="meter"></canvas>
-                <div id="ulText" class="meterText"></div>
-                <div class="unit">Mbps</div>
-            </div>
-            <div class="testArea">
-                <div class="testName">Ping</div>
-                <canvas id="pingMeter" class="meter"></canvas>
-                <div id="pingText" class="meterText"></div>
-                <div class="unit">ms</div>
-            </div>
 
-            <div class="testArea">
-                <div class="testName">Jitter</div>
-                <canvas id="jitMeter" class="meter"></canvas>
-                <div id="jitText" class="meterText"></div>
-                <div class="unit">ms</div>
+<body>
+    <div id="testWrapper">
+        <h1 id="pageTitle"></h1>
+        <div id="startStopBtn" onclick="startStop()"></div>
+        <br />
+        <div id="test">
+            <div class="testGroup">
+                <div class="testArea">
+                    <div class="testName">Download</div>
+                    <canvas id="dlMeter" class="meter"></canvas>
+                    <div id="dlText" class="meterText"></div>
+                    <div class="unit">Mbps</div>
+                </div>
+                <div class="testArea">
+                    <div class="testName">Upload</div>
+                    <canvas id="ulMeter" class="meter"></canvas>
+                    <div id="ulText" class="meterText"></div>
+                    <div class="unit">Mbps</div>
+                </div>
+                <div class="testArea">
+                    <div class="testName">Ping</div>
+                    <canvas id="pingMeter" class="meter"></canvas>
+                    <div id="pingText" class="meterText"></div>
+                    <div class="unit">ms</div>
+                </div>
+
+                <div class="testArea">
+                    <div class="testName">Jitter</div>
+                    <canvas id="jitMeter" class="meter"></canvas>
+                    <div id="jitText" class="meterText"></div>
+                    <div class="unit">ms</div>
+                </div>
             </div>
-        </div>
-        <div id="ipArea">
-            <span id="ip"></span>
-        </div>
-        <div><a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a></div>
-        <div id="shareArea" style="display:none">
-            <h3>Share your results</h3>
-            <input type="text" value="" id="resultsURL" readonly="readonly"
-                   onclick="this.select();this.focus();this.select();document.execCommand('copy');alert('Link copied')"/>
-            <img src="" id="resultsImg"/>
-            <p>Test ID: <span id="testId"></span></p>
+            <div id="ipArea">
+                <span id="ip"></span>
+            </div>
+            <div><a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a></div>
+            <div id="shareArea" style="display:none">
+                <h3>Share your results</h3>
+                <input type="text" value="" id="resultsURL" readonly="readonly"
+                    onclick="this.select();this.focus();this.select();document.execCommand('copy');alert('Link copied')" />
+                <img src="" id="resultsImg" />
+                <p>Test ID: <span id="testId"></span></p>
+            </div>
         </div>
     </div>
-</div>
-<div id="privacyPolicy" style="display:none">
-    <h2>Privacy Policy</h2>
-    <p>This HTML5 Speedtest server is configured with telemetry enabled.</p>
-    <h4>What data we collect</h4>
-    <p>
-        At the end of the test, the following data is collected and stored:
-    <ul>
-        <li>Test ID</li>
-        <li>Time of testing</li>
-        <li>Test results (download and upload speed, ping and jitter)</li>
-        <li>IP address</li>
-        <li>ISP information</li>
-        <li>Approximate location (inferred from IP address, not GPS)</li>
-        <li>User agent and browser locale</li>
-        <li>Test log (contains no personal information)</li>
-    </ul>
-    </p>
-    <h4>How we use the data</h4>
-    <p>
-        Data collected through this service is used to:
-    <ul>
-        <li>Allow sharing of test results (sharable image for forums, etc.)</li>
-        <li>To improve the service offered to you (for instance, to detect problems on our side)</li>
-    </ul>
-    No personal information is disclosed to third parties.
-    </p>
-    <h4>Your consent</h4>
-    <p>
-        By starting the test, you consent to the terms of this privacy policy.
-    </p>
-    <h4>Data removal</h4>
-    <p>
-        If you want to have your information deleted, you need to provide either the ID of the test or your IP address.
-        This is the only way to identify your data, without this information we won't be able to comply with your
-        request.<br/><br/>
-        Contact this email address for all deletion requests: 
-    </p>
-    <br/><br/>
-    <a id="privacyCloseBtn" class="privacy" href="#" onclick="I('privacyPolicy').style.display='none'">Close</a><br/>
-</div>
-<script type="text/javascript">setPageTitle();</script>
-<script type="text/javascript">setTimeout(function () {
-        initUI()
-    }, 100);</script>
+    <div id="privacyPolicy" style="display:none">
+        <h2>Privacy Policy</h2>
+        <p>This HTML5 Speedtest server is configured with telemetry enabled.</p>
+        <h4>What data we collect</h4>
+        <p>
+            At the end of the test, the following data is collected and stored:
+        <ul>
+            <li>Test ID</li>
+            <li>Time of testing</li>
+            <li>Test results (download and upload speed, ping and jitter)</li>
+            <li>IP address</li>
+            <li>ISP information</li>
+            <li>Approximate location (inferred from IP address, not GPS)</li>
+            <li>User agent and browser locale</li>
+            <li>Test log (contains no personal information)</li>
+        </ul>
+        </p>
+        <h4>How we use the data</h4>
+        <p>
+            Data collected through this service is used to:
+        <ul>
+            <li>Allow sharing of test results (sharable image for forums, etc.)</li>
+            <li>To improve the service offered to you (for instance, to detect problems on our side)</li>
+        </ul>
+        No personal information is disclosed to third parties.
+        </p>
+        <h4>Your consent</h4>
+        <p>
+            By starting the test, you consent to the terms of this privacy policy.
+        </p>
+        <h4>Data removal</h4>
+        <p>
+            If you want to have your information deleted, you need to provide either the ID of the test or your IP
+            address.
+            This is the only way to identify your data, without this information we won't be able to comply with your
+            request.<br /><br />
+
+        </p>
+        <br /><br />
+        <a id="privacyCloseBtn" class="privacy" href="#"
+            onclick="I('privacyPolicy').style.display='none'">Close</a><br />
+    </div>
+    <script type="text/javascript">setPageTitle();</script>
+    <script type="text/javascript">setTimeout(function () {
+            initUI()
+        }, 100);</script>
 </body>
+
 </html>
