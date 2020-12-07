@@ -25,27 +25,6 @@
             var lineBreakElement = document.createElement('br');
             var locationNode = document.createTextNode('Unknown');
             switch (window.location.hostname) {
-                // case 'us1.zzz.cat':
-                //     locationNode.textContent = 'Unites States 1 (Fremont, Linode)';
-                //     break;
-                // case 'us2.zzz.cat':
-                //     locationNode.textContent = 'Unites States 2 (LAX (CN2), Bandwagon)';
-                //     break;
-                // case 'us3.zzz.cat':
-                //     locationNode.textContent = 'Unites States 3 (LAX (CN2 GIA-E), Bandwagon)';
-                //     break;
-                // case 'jp1.zzz.cat':
-                //     locationNode.textContent = 'Japan 1 (Tokyo 2, Linode)';
-                //     break;
-                // case 'jp2.zzz.cat':
-                //     locationNode.textContent = 'Japan 2 (Tokyo 2, Linode)';
-                //     break;
-                // case 'sg1.zzz.cat':
-                //     locationNode.textContent = 'Singapore (Singapore, Linode)';
-                //     break;
-                // case 'ca1.zzz.cat':
-                //    locationNode.textContent = 'Canada (Toronto, Linode)';
-                //    break;
                 default:
                     locationNode.textContent = window.location.hostname;
                     break;
@@ -204,8 +183,8 @@
 
         html {
             line-height: 1.15;
-            -ms-text-size-adjust: 90%;
-            -webkit-text-size-adjust: 90%;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
         }
 
         body {
@@ -272,7 +251,7 @@
             display: inline-block;
             width: calc(100% - 2rem - 2rem);
             /* subtract margins */
-            max-width: 16em;
+            max-width: 14em;
             margin: 2rem;
             position: relative;
             box-sizing: border-box;
@@ -475,7 +454,7 @@
             <div id="ipArea">
                 <span id="ip"></span>
             </div>
-            <div><a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a></div>
+            <div><a class="Notes" href="#" onclick="I('privacyPolicy').style.display=''">Notes</a></div>
             <div id="shareArea" style="display:none">
                 <h3>Share your results</h3>
                 <input type="text" value="" id="resultsURL" readonly="readonly"
@@ -486,42 +465,8 @@
         </div>
     </div>
     <div id="privacyPolicy" style="display:none">
-        <h2>Privacy Policy</h2>
-        <p>This HTML5 Speedtest server is configured with telemetry enabled.</p>
-        <h4>What data we collect</h4>
-        <p>
-            At the end of the test, the following data is collected and stored:
-        <ul>
-            <li>Test ID</li>
-            <li>Time of testing</li>
-            <li>Test results (download and upload speed, ping and jitter)</li>
-            <li>IP address</li>
-            <li>ISP information</li>
-            <li>Approximate location (inferred from IP address, not GPS)</li>
-            <li>User agent and browser locale</li>
-            <li>Test log (contains no personal information)</li>
-        </ul>
-        </p>
-        <h4>How we use the data</h4>
-        <p>
-            Data collected through this service is used to:
-        <ul>
-            <li>Allow sharing of test results (sharable image for forums, etc.)</li>
-            <li>To improve the service offered to you (for instance, to detect problems on our side)</li>
-        </ul>
-        No personal information is disclosed to third parties.
-        </p>
-        <h4>Your consent</h4>
-        <p>
-            By starting the test, you consent to the terms of this privacy policy.
-        </p>
-        <h4>Data removal</h4>
-        <p>
-            If you want to have your information deleted, you need to provide either the ID of the test or your IP
-            address.
-            This is the only way to identify your data, without this information we won't be able to comply with your
-            request.<br /><br />
-
+        <h2>Notes</h2>
+        <p>This HTML5 Speedtest server is capable of testing at close to 1Gbps</h4>
         </p>
         <br /><br />
         <a id="privacyCloseBtn" class="privacy" href="#"
