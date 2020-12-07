@@ -6,9 +6,6 @@ No Flash, No Java, No WebSocket, No Bullshit.
 
 This is a very lightweight speed test implemented in JavaScript, using XMLHttpRequest and Web Workers.
 
-## Try it
-[Take a speed test](https://speedtest.zzz.cat)
-
 ## Compatibility
 All modern browsers are supported: IE11, latest Edge, latest Chrome, latest Firefox, latest Safari.
 Works with mobile versions too.
@@ -24,8 +21,6 @@ Works with mobile versions too.
 * Multiple Points of Test (optional)
 * Compatible with PHP frontend predefined endpoints (with `.php` suffixes)
 * Supports [Proxy Protocol](https://www.haproxy.org/download/2.3/doc/proxy-protocol.txt) (without TLV support yet)
-
-![Screencast](https://speedtest.zzz.cat/speedtest.webp)
 
 ## Server requirements
 * Any [Go supported platforms](https://github.com/golang/go/wiki/MinimumRequirements)
@@ -96,7 +91,7 @@ manually, you can install newer version of Go into your `GOPATH`:
     server_lng=0
     # ipinfo.io API key, if applicable
     ipinfo_api_key=""
-   
+
     # assets directory path, defaults to `assets` in the same directory
     assets_path="./assets"
 
